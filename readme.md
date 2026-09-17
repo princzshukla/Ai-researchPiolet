@@ -1,0 +1,3 @@
+Research Agent is a multi-agent research assistant built with LangGraph. Give it a task, and it plans the steps, decides which tool fits each one — live web search, retrieval over your own documents, or a calculator — and compiles everything into a structured markdown report. Every step is traceable: you can see exactly which tool was called, with what query, and what it returned, before the final report is written.
+
+Built with FastAPI, LangGraph, Groq (openai/gpt-oss-120b), Qdrant, and PostgreSQL on the backend; Next.js on the frontend.

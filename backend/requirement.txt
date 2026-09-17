@@ -1,0 +1,35 @@
+fastapi
+uvicorn[standard]
+python-multipart
+python-dotenv
+pydantic-settings
+
+# Agent orchestration
+langchain
+langchain-core
+langchain-community
+langchain-groq
+langgraph
+
+# LLM
+groq
+
+# Embeddings (free, local — reused from rag-doc-chat)
+sentence-transformers
+
+# Vector store
+qdrant-client
+
+# Web search tool
+tavily-python
+
+# PDF parsing (for the RAG tool, reused from rag-doc-chat)
+pypdf
+
+# Database
+sqlalchemy
+psycopg2-binary
+
+# Testing
+pytest
+pytest-asyncio
