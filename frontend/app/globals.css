@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --color-base: #08090c;
+  --color-surface-1: #0f1117;
+  --color-surface-2: #161922;
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-strong: rgba(255, 255, 255, 0.14);
+
+  --color-text: #e3e2e6;
+  --color-text-muted: #c7c4d7;
+  --color-text-dim: rgba(227, 226, 230, 0.5);
+
+  --color-indigo: #6366f1;
+  --color-indigo-light: #818cf8;
+  --color-cyan: #06b6d4;
+  --color-cyan-light: #22d3ee;
+  --color-emerald: #10b981;
+  --color-emerald-light: #34d399;
+  --color-crimson: #f43f5e;
+  --color-crimson-light: #fb7185;
+
+  --font-display: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+}
+
+body {
+  background-color: var(--color-base);
+  color: var(--color-text);
+  background-image: radial-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.glass-1 {
+  background-color: rgba(15, 17, 23, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--color-border);
+}
+.glass-2 {
+  background-color: rgba(22, 25, 34, 0.65);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--color-border);
+}
+.glow-indigo {
+  box-shadow: 0 0 24px -4px rgba(99, 102, 241, 0.25);
+}
