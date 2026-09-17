@@ -10,6 +10,7 @@ class Settings(BaseSettings):
     QDRANT_API_KEY: str = ""
     QDRANT_COLLECTION: str = "documents"
     DATABASE_URL: str
+    HF_TOKEN: str
 
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
